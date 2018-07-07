@@ -1,0 +1,21 @@
+<div class="cart-price" >
+    <div class="cart-price-inner1 cart-price-inner2" > 
+             <div class="cart-price-span"><span>Price details</span></div>
+             <div class="cart-price-detail">
+                <div class="cart-price-desc">
+                   <div>Price ({{countTotalItems()}} items)</div>
+                   <div > ₹{{calculateItemsPrice() | number : '1.2-2'}}</div>
+                </div>
+                <div class="cart-price-desc">
+                   <div>Delivery Charges</div>
+                   <div><span class="cart-del-price">₹1000.00</span></div>
+                </div>
+                <div class="cart-price-net">
+                   <div class="cart-price-desc _total">
+                      <div>Amount Payable</div>
+                      <div> ₹{{calculateAmountPayable()  | number : '1.2-2'}}</div>
+                   </div>
+                </div>
+             </div>
+    </div>
+ </div>

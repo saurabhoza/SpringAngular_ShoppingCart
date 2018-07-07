@@ -1,0 +1,9 @@
+<mat-grid-list cols="4" gutterSize='20px' rowHeight="1.5:1">
+                <mat-grid-tile *ngFor='let product of productList'[ngStyle]="{'background-image': 'url(' + product.thumbnailURL + ')'}">
+                        <mat-grid-tile-header>{{product.name}}</mat-grid-tile-header>
+                        <mat-grid-tile-footer fxLayout="row"><span fxFlex class="price-text">Price : &#8377; {{product.price | number : '1.2-2'}}</span></mat-grid-tile-footer>
+                        <button mat-raised-button (click)="addToCart(product, 1)" class="add-cart-button">Add to Cart</button>
+                        <div class="tile-overlap" (click)='viewDetails(product)'></div>
+                </mat-grid-tile>
+</mat-grid-list> 
+        

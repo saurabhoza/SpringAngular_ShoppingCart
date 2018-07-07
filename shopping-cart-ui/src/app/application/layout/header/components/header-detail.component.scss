@@ -1,0 +1,16 @@
+.common-header{
+    height:100px;
+    background-image: url("./../../../../../assets/images/common_header.jpg");
+    background-repeat: repeat-y;
+    background-color: #a56b39;
+    min-width: 100%;
+}
+.common-header-text{
+    font-size: 52px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    font-family: Roboto, Arial, sans-serif;
+    margin:0px 0 5px 20px;
+    text-align: left;  
+}

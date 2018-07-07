@@ -1,0 +1,3 @@
+<div fxLayout="row" class="language-bar-container">
+ <div fxFlex *ngFor="let langOption of langOptions" [class]="langOption.value === lang ?'language-selected-option':'language-option'" (click)="changeLanguage(langOption.value)">{{langOption.name}}</div>
+</div>

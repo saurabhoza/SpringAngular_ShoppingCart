@@ -1,0 +1,14 @@
+
+
+<div class="cart-quan">
+    <div class="cart-quan-detail">
+       <div class="cart-quan-inner-detail">
+          <button class="cart-quan-change" (click)="decrementQuantity()"> – </button>
+          <div class="cart-quan-div"><input type="number" disabled [(ngModel)]="cartProduct.quantity" (change)="validateQuantity()" class="cart-quan-text"></div>
+          <button class="cart-quan-change" (click)="incrementQuantity()"> + </button>
+       </div>
+    </div>
+     <div class="cart-quan-error">
+        <div [@hideShowAnimator]="hideShowAnimator" [innerHTML] = "errorMessage" class="alert alert-danger"></div>
+    </div>
+ </div>

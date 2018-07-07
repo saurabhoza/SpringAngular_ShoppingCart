@@ -1,0 +1,21 @@
+@import './assets/themes/coffee-theme.css';
+body { 
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+  }
+  .mat-card-title{
+    font-size: 30px !important;
+  }
+  .mat-raised-button{
+    color:#fff !important;
+    background-color: #a56b39;
+  }
+  .text-left{
+    text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.middle-container{
+  margin:10px;
+}

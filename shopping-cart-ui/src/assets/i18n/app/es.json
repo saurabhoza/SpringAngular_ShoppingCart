@@ -1,0 +1,15 @@
+{
+    "MENU_BOOK_REQUEST": "Solicitud de libro",
+    "MENU_RENEWAL_REQUEST": "Solicitud de renovación",
+    "MENU_MEMBER_REGISTRATION": "Registro de miembros",
+    "MENU_BOOK_REGISTRATION": "Registro de libro",
+    "MENU_BOOK_ISSUANCE": "Emisión de libros",
+    "MENU_BOOK_RENEWAL": "Renovación de libros",
+    "MENU_BOOK_SUBMISSION": "Presentación del libro",
+    "MENU_TRANSACTION": "Transacción",
+    "MENU_DASHBOARD": "Tablero",
+    "MENU_REQUEST": "Solicitud",
+    "MENU_REGISTRATION": "Registro",
+    "HEADER_EPAM_SHOPPERS_CART": "Carro Epam Shoppers",
+    "PROFILE_WELCOME": "Bienvenido" 
+}

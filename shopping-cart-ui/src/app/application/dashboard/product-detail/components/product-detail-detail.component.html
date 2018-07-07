@@ -1,0 +1,69 @@
+<div class="product-details-middle-container">
+
+    <div fxLayout="row" fxLayout.lt-sm="column">
+        <mat-card  fxFlex="40%" fxFlex.lt-md="40%" ngClass.lt-sm="product-size-margin" fxLayout="column" fxLayoutGap="60px">
+            <mat-card-content fxFlex="80%">
+                  <img [src]="product.thumbnailURL" class="myFlexedImage">            
+            </mat-card-content>            
+            <mat-card-footer class="add-to-cart-button"><button mat-raised-button (click)="addToCart(product, 1)">Add to Cart </button></mat-card-footer>            
+        </mat-card>
+
+        <mat-card fxFlex>
+            <mat-card-header fxLayout="row">
+                <mat-card-title fxFlex>{{product.name}}</mat-card-title>
+                <div fxFlex></div>
+                <button mat-raised-button (click)="back()" class="back-button">Back</button>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div fxLayout="column" fxLayoutGap="20px" class="product-content-size">
+                    <div fxFlex>
+                        <div fxLayout="row" fxLayoutGap="70px">
+                            <span class="product-sub-title">Price:</span>
+                            <span> &#8377; {{product.mrp | number : '1.2-2'}}</span>
+                        </div>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="row" fxLayoutGap="78px">
+                            <span class="product-sub-title">S.P.:</span>
+                            <span class="product-price"> &#8377; {{product.sellingPrice | number : '1.2-2'}}</span>
+                        </div>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="row" fxLayoutGap="9px">
+                            <span class="product-sub-title">HighLights:</span>
+                            <div>
+                                <ul>
+                                    <li>13MP primary camera with 5 element lens, f/2.0 aperture, PDAF supported and 5MP front
+                                        facing camera</li>
+                                    <li>13.97 centimeters (5.5-inch) capacitive touchscreen with 1280 x 720 pixels resolution
+                                        and 267 ppi pixel density</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="row" fxLayoutGap="65px">
+                            <span class="product-sub-title">Seller:</span>
+                            <div>{{product.seller}}</div>
+                        </div>
+                    </div>
+                    <div fxFlex>
+                        <div fxLayout="row" fxLayoutGap="26px">
+                            <span class="product-sub-title">Description:</span>
+                            <div class="product-description">
+                                {{product.description}}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </mat-card-content>
+            <mat-card-footer>
+                <button mat-raised-button (click)="back()">Back</button>
+            </mat-card-footer>
+        </mat-card>
+
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="login-container" fxFlex=400px>
+        <div class="body-div">
+            <span class="login-header">{{"LOGIN_HEADER" | translate}} </span>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div fxLayout="column">
+                    <md-form-field>
+                        <input class="text-input" fxFlex=100 mdInput placeholder="{{'LOGIN_USER_ID' | translate}}" formControlName="userName">
+                    </md-form-field>
+                    <md-form-field>
+                        <input class="text-input" fxFlex=100 mdInput placeholder="{{'LOGIN_PASSWORD' | translate}} " formControlName="password" type="password">
+                    </md-form-field>
+                </div>
+                <span class="login-error">{{_model.errMsg | translate}}</span>
+                <button mat-raised-button type="submit">{{"LOGIN_LOGIN_BUTTON" | translate}}</button>
+                <button mat-raised-button>{{"LOGIN_CANCEL_BUTTON" | translate}} </button>
+            </form>
+            <br>
+            <span class="sign-up">{{"HOME_NOT_A_MEMBER" | translate}}
+                <a href="">{{"HOME_SIGN_UP" | translate}}</a> {{"HOME_NOW" | translate}} </span>
+        </div>
+    </div>

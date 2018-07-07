@@ -1,0 +1,33 @@
+<div class="cart-container">
+        <div class="cart-inner-container">
+           <div class="cart-header">
+              <span class="cart-header-span">My Cart</span>
+        </div>        
+
+        <div class="cart-item" *ngIf="cartProductList.length==0">
+                        <mat-card class="example-card">
+                                        <img mat-card-image src="./assets/images/EmptyCart.jpg" alt="Empty Cart" class="empty-cart-img">
+                                        <mat-card-content>
+                                          <p class="empty-cart"> Your Shopping Cart is empty.</p>
+                                   </mat-card-content>
+                        </mat-card>
+        </div>
+        
+        <div>
+                <app-cart-product-details [cartProductList]="cartProductList"
+                                        (removedProduct)='removeProductFromCart($event)'>
+                </app-cart-product-details>             
+        </div>
+         
+                 <div class="cart-footer">
+                       <button class="cart-button-first cart-button-second cart-button-third" (click)="saveCartProducts(false)">
+                          <svg width="16" height="27" viewBox="0 0 16 27" xmlns="" >
+                             <path fill="#fff"  ></path>
+                          </svg>
+                          <span style="vertical-align: inherit;" id="continueShopping">Continue shopping</span>
+                       </button>
+                    <button *ngIf="cartProductList.length>0" class="cart-button-second cart-order-button" tabindex="30" (click)="saveCartProducts(true)" id="placeOrder"><span>Place Order</span></button>
+                 </div>
+</div>
+</div>
+<app-cart-price-details *ngIf="cartProductList.length>0" [cartProductList]="cartProductList"></app-cart-price-details>

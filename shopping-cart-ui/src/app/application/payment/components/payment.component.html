@@ -1,0 +1,131 @@
+<div fxLayout="row" fxLayout.lt-sm="column">
+    <mat-card fxFlex class="middle-container">
+        <mat-card-header class="text-left">
+            <mat-card-title>{{"PAYMENT_HEADER" | translate}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-accordion>
+                <mat-expansion-panel class="text-left" [expanded]="paymentOption === 1" (opened)="setPaymentOption(1)" (closed)="paymentOptionClosed(1)">
+                    <mat-expansion-panel-header>
+                        Credit Card
+                    </mat-expansion-panel-header>
+
+                    <form fxFlex="50%" fxLayout="column" [formGroup]="creditCardForm" fxLayout="column">
+                        <img src="./assets/images/credit-cards.png" fxFlex class="credit-card-logo" />
+                        <mat-list class="text-left" fxFlex *ngIf="errorList.length > 0">
+                            <mat-list-item *ngFor="let error of errorList">
+                                <mat-icon>error_outline</mat-icon>
+                                <p mat-line>{{error.message}}</p>
+                            </mat-list-item>
+                        </mat-list>
+                        <mat-form-field fxFlex>
+                            <input class="text-input" matInput placeholder="{{'CARD_NUMBER' | translate}}*" formControlName="cardNumber" maxlength="19">
+                        </mat-form-field>
+                        <validation-errors [control]="creditCardForm.controls.cardNumber" [errorFormField]="cardNumberMessages"></validation-errors>
+                        <mat-form-field fxFlex>
+                            <input matclass="text-input" matInput placeholder="{{'NAME_ON_CARD' | translate}}*" formControlName="nameOnCard" maxlength="20">
+                        </mat-form-field>
+                        <validation-errors [control]="creditCardForm.controls.nameOnCard" [errorFormField]="nameOnCardMessages"></validation-errors>
+                        <div fxLayout="row" fxLayoutGap="1%">
+                            <mat-form-field fxFlex=31>
+                                <mat-select placeholder="{{'MONTH' | translate}}*" formControlName="expMonth">
+                                    <mat-option *ngFor="let monthOption of monthOptions" [value]="monthOption.key">
+                                        {{ monthOption.value }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <mat-form-field fxFlex=31>
+                                <mat-select placeholder="{{'YEAR' | translate}}*" formControlName="expYear">
+                                    <mat-option *ngFor="let yearOption of yearOptions" [value]="yearOption">
+                                        {{ yearOption }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <mat-form-field fxFlex=34>
+                                <input class="text-input" matInput placeholder="{{'CVV_NO' | translate}}*" formControlName="cvvNo" maxlength="3">
+                            </mat-form-field>
+
+                            <div style="position:relative;">
+                                <mat-icon class="cvv-info" (click)="dispalyCvvTip()">info</mat-icon>
+                                <div class="cvv-tip" [ngStyle]="{'display':cvvTipDisplay}">
+                                    <img src="./assets/images/cvv_indicator.jpg">
+                                    <mat-icon (click)="hideCvvTip()">highlight_off</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <validation-errors [control]="creditCardForm.controls.expMonth" [errorFormField]="expMonthMessages"></validation-errors>
+                        <validation-errors [control]="creditCardForm.controls.expYear" [errorFormField]="expYearMessages"></validation-errors>
+                        <validation-errors [control]="creditCardForm.controls.cvvNo" [errorFormField]="cvvNoMessages"></validation-errors>
+                        <mat-checkbox fxFlex class="save-card">Save my Card Details</mat-checkbox>
+                    </form>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="text-left" [expanded]="paymentOption === 2" (opened)="setPaymentOption(2)" (closed)="paymentOptionClosed(2)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span style="width:160px">Debit Card</span>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            This feature is disabled
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <mat-form-field>
+                        <mat-select placeholder="Choose an Option" disabled>
+                            <mat-option value=" ">
+                                Choose an Option
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="text-left" [expanded]="paymentOption === 3" (opened)="setPaymentOption(3)" (closed)="paymentOptionClosed(3)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span style="width:160px">Net Banking</span>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            This feature is disabled
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <mat-form-field>
+                        <mat-select placeholder="Choose an Option" disabled>
+                            <mat-option value=" ">
+                                Choose an Option
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="text-left" [expanded]="paymentOption === 4" (opened)="setPaymentOption(4)" (closed)="paymentOptionClosed(4)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span style="width:160px">EMI</span>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            This feature is disabled
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="text-left" [expanded]="paymentOption === 5" (opened)="setPaymentOption(5)" (closed)="paymentOptionClosed(5)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span style="width:160px">Pay on Delivery (POD)</span>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            This feature is disabled
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    Pay on Delivery is not available for this order.
+                    <a href="">Why?</a>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="370px" class="middle-container">
+        <mat-card-header>
+            <mat-card-title>{{'AMOUNT_PAYABLE' | translate}}: ₹{{totalAmount}}.00</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <button mat-raised-button (click)="submitForm(creditCardForm)">{{'PAY_NOW' | translate}}</button>
+        </mat-card-content>
+    </mat-card>
+</div>

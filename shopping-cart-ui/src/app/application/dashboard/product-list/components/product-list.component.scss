@@ -1,0 +1,21 @@
+mat-grid-tile {
+    background: lightblue;
+    background-size: cover;
+  }
+  .tile-overlap{
+    cursor: pointer;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px; left:0px;
+  }
+  .add-cart-button{
+    position:absolute;
+    bottom:6px;
+    right:6px;
+    z-index: 100;
+  }
+
+  .price-text{
+    text-align: left
+  }

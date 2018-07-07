@@ -1,0 +1,48 @@
+
+<mat-card class="middle-container">
+<mat-card-header class="text-left">
+    <mat-card-title>{{"MEMBER_REGISTRATION_HEADER" | translate}}</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+    <div fxLayout="row">
+        <div fxFlex="50%" class="text-left">
+            <form [formGroup]="memberRegistrationForm">
+                <div fxLayout="column">
+                    <mat-form-field>
+                        <input matclass="text-input" fxFlex=100 matInput placeholder="{{'MEMBER_REG_FIRST_NAME' | translate}}*" formControlName="firstName">
+                    </mat-form-field>
+                    <validation-errors [control]="memberRegistrationForm.controls.firstName" [errorFormField]="firstNameMessages"></validation-errors>
+                    <mat-form-field>
+                        <input class="text-input" fxFlex=100 matInput placeholder="{{'MEMBER_REG_LAST_NAME' | translate}}*" formControlName="lastName">
+                    </mat-form-field>
+                    <validation-errors [control]="memberRegistrationForm.controls.lastName" [errorFormField]="lastNameMessages"></validation-errors>
+                    <div class="radio-group-container"  [ngClass]='memberRegistrationForm.controls.gender.errors ? memberRegistrationForm.controls.gender.touched ?"invalid-label":"valid-label":"valid-label"'>
+                        <div id="label">{{'MEMBER_REG_GENDER' | translate}}*</div>
+                        <mat-radio-group formControlName="gender">
+                            <mat-radio-button value="M">{{'OPTION_MALE' | translate}}</mat-radio-button>
+                            <mat-radio-button value="F">{{'OPTION_FEMALE' | translate}}</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <validation-errors [control]="memberRegistrationForm.controls.gender" [errorFormField]="requiredOptionMessages"></validation-errors>
+                    <mat-form-field>
+                        <input class="text-input" fxFlex=100 matInput placeholder="{{'MEMBER_REG_EMAIL_ID' | translate}}*" formControlName="emailId">
+                    </mat-form-field>
+                    <validation-errors [control]="memberRegistrationForm.controls.emailId" [errorFormField]="emailIdMessages"></validation-errors>
+                    <mat-form-field>
+                        <input class="text-input" fxFlex=100 matInput placeholder="{{'MEMBER_REG_CONTACT_NUMBER' | translate}}*" formControlName="contactNumber">
+                    </mat-form-field>
+                    <validation-errors [control]="memberRegistrationForm.controls.contactNumber" [errorFormField]="contactNumberMessages"></validation-errors>
+                    <mat-form-field>
+                        <textarea class="text-input" fxFlex=100 matInput placeholder="{{'MEMBER_REG_ADDRESS' | translate}}*" formControlName="address" rows="3"> </textarea>
+                    </mat-form-field>
+                    <validation-errors [control]="memberRegistrationForm.controls.address" [errorFormField]="addressMessages"></validation-errors>
+                </div>
+                <div class="navigation-panel">
+                    <button mat-raised-button type="submit" (click)="submitForm(memberRegistrationForm)">{{'BUTTON_SAVE' | translate}}</button>
+                    <button mat-raised-button type="reset">{{'BUTTON_CANCEL' | translate}} </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</mat-card-content>
+</mat-card>

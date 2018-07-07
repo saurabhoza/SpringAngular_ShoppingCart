@@ -1,0 +1,15 @@
+{
+    "MENU_BOOK_REQUEST": "Book Request",
+    "MENU_RENEWAL_REQUEST": "Renewal Request",
+    "MENU_MEMBER_REGISTRATION": "Member Registration",
+    "MENU_BOOK_REGISTRATION": "Book Registration",
+    "MENU_BOOK_ISSUANCE": "Book Issuance",
+    "MENU_BOOK_RENEWAL": "Book Renewal",
+    "MENU_BOOK_SUBMISSION": "Book Submission",
+    "MENU_TRANSACTION":"Transaction",
+    "MENU_DASHBOARD":"Dashboard",
+    "MENU_REQUEST":"Request",
+    "MENU_REGISTRATION":"Registration" ,
+    "HEADER_EPAM_SHOPPERS_CART":"Epam Shopper`s Cart",
+    "PROFILE_WELCOME": "Welcome"
+}

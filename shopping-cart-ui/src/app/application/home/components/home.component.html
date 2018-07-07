@@ -1,0 +1,103 @@
+<div class="home-header-container" fxLayout="row">
+    <div fxFlex fxLayout="column">
+        <img fxFlex="60px" src='./assets/images/Esc_logo1.png' style="width:70px;margin-left:10px;">
+        <span fxFlex class="main-home-header">{{"HEADER_EPAM_SHOPPERS_CART" | translate}}</span>
+        <div class="language-bar-container" fxFlex="40px"><app-language-bar></app-language-bar></div>
+    </div>
+    <app-login></app-login>
+</div>
+<div class="home-middle-container" fxLayout="row">
+    <mat-card fxFlex>
+        <mat-card-header class="text-left">
+            <img mat-card-avatar src="./assets/images/about-us.png" alt="Book">
+            <mat-card-title>{{"HOME_ABOUT_US" | translate}}</mat-card-title>
+            <mat-card-subtitle>{{"HOME_OUR_MISSION" | translate}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="text-justify">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                </p>
+            </div>
+            <mat-list class="text-left">
+                <h3 mat-subheader>{{"HOME_CONTACTS" | translate}}</h3>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>call</mat-icon>
+                    <span mat-line>+91-022-5345847</span>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>email</mat-icon>
+                    <h4 mat-line>epamshoppers.cart@epam.com</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>place</mat-icon>
+                    <h4 mat-line>B-569, Some Address, Local Street, Pune-56346</h4>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+            </mat-list>
+        </mat-card-content>
+        <mat-card-actions>
+            <span>{{"HOME_NOT_A_MEMBER" | translate}} &nbsp;&nbsp;
+                <button mat-raised-button>{{"HOME_SIGN_UP" | translate}} </button>&nbsp;&nbsp; {{"HOME_NOW" | translate}} </span>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="example-card" fxFlex>
+        <mat-card-header class="text-left">
+            <img mat-card-avatar src="./assets/images/book-icon.png" alt="Book">
+            <mat-card-title>{{"HOME_UPDATES" | translate}}</mat-card-title>
+            <mat-card-subtitle>{{"HOME_AVAILABLE_NEW_PRODUCTS" | translate}} </mat-card-subtitle>
+        </mat-card-header>
+
+
+        <mat-list class="text-left">
+            <h3 mat-subheader>{{"HOME_PRODUCTS" | translate}} </h3>
+            <div fxLayout="row">
+                <img mat-card-avatar src="./assets/images/book-icon.jpg" alt="Book" id="update-image">
+                <mat-list-item>
+                    <h4 mat-line>Technology and Innovation Management</h4>
+                    <p mat-line>16-Mar-2018</p>
+                </mat-list-item>
+            </div>
+            <mat-divider></mat-divider>
+            <div fxLayout="row">
+                <img mat-card-avatar src="./assets/images/book-icon.jpg" alt="Book" id="update-image">
+                <mat-list-item>
+                    <h4 mat-line>How to Write and Publish a Scientific Paper</h4>
+                    <p mat-line> 17-Mar-2018</p>
+                </mat-list-item>
+            </div>
+            <mat-divider></mat-divider>
+            <div fxLayout="row">
+                <img mat-card-avatar src="./assets/images/book-icon.jpg" alt="Book" id="update-image">
+                <mat-list-item>
+                    <h4 mat-line>Let's Get Digital</h4>
+                    <p mat-line> 01-Apr-2018</p>
+                </mat-list-item>
+            </div>
+            <mat-divider></mat-divider>
+            <div fxLayout="row">
+                <img mat-card-avatar src="./assets/images/book-icon.jpg" alt="Book" id="update-image">
+                <mat-list-item>
+                    <h4 mat-line> Hit Refresh by Satya Nadella</h4>
+                    <p mat-line> 07-Apr-2018</p>
+                </mat-list-item>
+            </div>
+        </mat-list>
+        <mat-card-actions>
+            <button mat-raised-button>{{"HOME_VIEW_ALL" | translate}} </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

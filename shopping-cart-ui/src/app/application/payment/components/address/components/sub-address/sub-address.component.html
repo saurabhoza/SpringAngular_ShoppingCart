@@ -1,0 +1,66 @@
+<mat-card fxFlex class="middle-container" style="padding-left: 35px;">
+    <mat-card-header class="text-left">
+        <mat-card-title *ngIf="addressType==Url_Constants.VALUE_SHIPPING" class="addressHeader">{{"ADDRESS_HEADER" | translate}}                
+        </mat-card-title>
+        <mat-card-title *ngIf="addressType==Url_Constants.VALUE_BILLING" class="addressHeader">{{"BILLING_ADDRESS_HEADER" | translate}}                
+            </mat-card-title>
+        <mat-card-subtitle class="subTittle">When finished, click the "Continue" button.</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+           
+                <div *ngIf="addressType==Url_Constants.VALUE_BILLING"  fxLayout="row">
+                    <h2>Is your Billing Address is same as Delivery Address ?</h2>
+                    
+                    <section class="example-section">
+                          <mat-slide-toggle class="example-margin" 
+                              [checked]="checked" (change)="onToggle($event)">
+                              {{sameAddress}}
+                          </mat-slide-toggle>
+                        </section>
+                </div>
+            
+        <form  fxLayout="column" [formGroup]="addressForm" (ngSubmit)="submitForm(addressForm)">
+            <span style="color: red;" *ngFor="let error of errorList">
+                {{error}}
+            </span>
+            
+            <mat-form-field fxFlex>
+                <input id="fullName" matclass="text-input" matInput placeholder="{{'FULL_NAME' | translate}}*" formControlName="fullName" maxlength="150" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.fullName" [errorFormField]="fullNameMessages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="mobileNumber" matclass="text-input" matInput placeholder="{{'MOBILE_NUMBER' | translate}}*" formControlName="mobileNumber" maxlength="20" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.mobileNumber" [errorFormField]="mobileNumberMessages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="pinCode" matclass="text-input" matInput placeholder="{{'PINCODE' | translate}}*" formControlName="pinCode" minlength=6, maxlength="6" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.pinCode" [errorFormField]="pinCodeMessages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="addressLine1" matclass="text-input" matInput placeholder="{{'ADDRESS_LINE_1' | translate}}*" formControlName="addressLine1" maxlength="300" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.addressLine1" [errorFormField]="addressLine1Messages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="addressLine2" matclass="text-input" matInput placeholder="{{'ADDRESS_LINE_2' | translate}}*" formControlName="addressLine2" maxlength="300" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.addressLine2" [errorFormField]="addressLine2Messages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="landMark" matclass="text-input" matInput placeholder="{{'LANDMARK' | translate}}*" formControlName="landMark" maxlength="300" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.landMark" [errorFormField]="landMarkMessages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="townCity" matclass="text-input" matInput placeholder="{{'TOWN_CITY' | translate}}*" formControlName="townCity" maxlength="100" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.townCity" [errorFormField]="townCityMessages"></validation-errors>
+            <mat-form-field fxFlex>
+                <input id="state" matclass="text-input" matInput placeholder="{{'STATE' | translate}}*" formControlName="state" maxlength="100" [readonly]="isReadOnly">
+            </mat-form-field>
+            <validation-errors [control]="addressForm.controls.state" [errorFormField]="stateMessages"></validation-errors>
+            <mat-form-actions style="text-align: right;padding-top: 20px;">
+            <button id="submit" mat-raised-button style="width: 25%;font-size: 20px;" type="submit"  >{{'Continue' | translate}}</button>
+        </mat-form-actions>
+        </form>
+        
+    </mat-card-content>
+</mat-card>
+

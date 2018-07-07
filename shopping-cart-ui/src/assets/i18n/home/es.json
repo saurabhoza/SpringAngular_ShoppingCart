@@ -1,0 +1,20 @@
+{
+    "HOME_ABOUT_US": "Acerca de nosotros",
+    "HOME_UPDATES": "Actualizaciones",
+    "HOME_VIEW_ALL": "Ver todo",
+    "HOME_PRODUCTS": "Libros",
+    "HEADER_EPAM_SHOPPERS_CART": "Carro Epam Shoppers",
+    "HOME_AVAILABLE_NEW_PRODUCTS": "Libros nuevos disponibles",
+    "HOME_OUR_MISSION": "Nuestra Misión",
+    "HOME_NOT_A_MEMBER": "¿No es miembro?",
+    "HOME_NOW": "¡Ahora!",
+    "LOGIN_HEADER": "Iniciar sesión",
+    "HOME_SIGN_UP": "Registrarse",
+    "LOGIN_LOGIN_BUTTON": "Iniciar sesión",
+    "LOGIN_CANCEL_BUTTON": "Cancelar",
+    "LOGIN_USER_ID": "Nombre de usuario",
+    "LOGIN_PASSWORD": "Contraseña",
+    "HOME_CONTACTS": "Contactos",
+    "SERVER_ERROR": "Error de servidor inesperado.",
+    "INVALID_USER_ERROR": "Usuario o contraseña invalido."
+}

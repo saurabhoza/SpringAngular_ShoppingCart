@@ -1,0 +1,20 @@
+{
+    "DASHBOARD_UPDATES": "Updates",
+    "DASHBOARD_ALERTS": "Alerts",
+    "DASHBOARD_ISSUED_BOOKS": "Issued Books",
+    "DASHBOARD_LINKS": "Links",
+    "DASHBOARD_VIEW_ALL": "View All",
+    "DASHBOARD_BOOKS": "Books",
+    "BOOK_REQUEST": "Book Request",
+    "RENEWAL_REQUEST": "Renewal Request",
+    "MEMBER_REGISTRATION": "Member Registration",
+    "BOOK_REGISTRATION": "Book Registration",
+    "BOOK_ISSUANCE": "Book Issuance",
+    "BOOK_RENEWAL": "Book Renewal",
+    "BOOK_SUBMISSION": "Book Submission",
+    "DASHBOARD_EPAM_SHOPPERS_CART": "Epam Shopper`s Cart",    
+    "PROFILE_ACCOUNT_DETAILS": "Account Details",
+    "PROFILE_ISSUANCE_LIMIT": "Issuance Limit",
+    "PROFILE_ISSUED_BOOKS": "Issued Books",
+    "PROFILE_REMAINING_BOOKS": "Remaining Books"
+}

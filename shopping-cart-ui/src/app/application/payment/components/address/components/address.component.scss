@@ -1,0 +1,45 @@
+mat-form-field{
+    padding:20px 0 0 0; 
+}
+.navigation-panel{
+    margin:20px 0;
+    text-align: center;
+
+}
+.invalid-label{
+    color:red;
+}
+.valid-label{
+    color:black;
+}
+.cvv-info{
+    margin-top: 35px;
+    cursor: pointer;
+}
+.cvv-tip{
+    position:absolute;
+    top:-45px;
+    left:-205px;
+    border: solid 1px black;;
+}
+.cvv-tip img{
+    height:100px;
+    width:200px;
+}
+.cvv-tip mat-icon{
+    position:absolute;
+    top:0px;
+    right:0px;
+    cursor: pointer;
+}
+
+.addressHeader{
+    color : #a56a37;
+    font-weight: bold;
+}
+
+.subTittle{
+    font-weight: bold;
+    color: black;
+}
+  

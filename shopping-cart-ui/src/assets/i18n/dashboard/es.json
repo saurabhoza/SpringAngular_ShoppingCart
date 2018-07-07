@@ -1,0 +1,20 @@
+{
+    "DASHBOARD_UPDATES": "Actualizaciones",
+    "DASHBOARD_ALERTS": "Alertas",
+    "DASHBOARD_ISSUED_BOOKS": "Libros emitidos",
+    "DASHBOARD_LINKS": "Enlaces",
+    "DASHBOARD_VIEW_ALL": "Ver todo",
+    "DASHBOARD_BOOKS": "Libros",
+    "BOOK_REQUEST": "Solicitud de libro",
+    "RENEWAL_REQUEST": "Solicitud de renovación",
+    "MEMBER_REGISTRATION": "Registro de miembros",
+    "BOOK_REGISTRATION": "Registro de libros",
+    "BOOK_ISSUANCE": "Emisión del libro",
+    "BOOK_RENEWAL": "Renovación de libros",
+    "BOOK_SUBMISSION": "Presentación del libro",
+    "DASHBOARD_EPAM_SHOPPERS_CART": "Biblioteca en línea",    
+    "PROFILE_ACCOUNT_DETAILS": "Detalles de la cuenta",
+    "PROFILE_ISSUANCE_LIMIT": "Límite de emisión",
+    "PROFILE_ISSUED_BOOKS": "Libros emitidos",
+    "PROFILE_REMAINING_BOOKS": "Libros restantes"
+}

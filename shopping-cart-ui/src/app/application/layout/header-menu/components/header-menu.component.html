@@ -1,0 +1,35 @@
+<div class="menu-container" fxLayout="row">
+        <div fxFlex="170px" class="language-bar-container">
+                <app-language-bar></app-language-bar>
+            </div>            
+<div fxFlex="100%">
+</div>
+<div fxFlex> <app-member-profile></app-member-profile> </div>
+    <div fxFlex >
+        <div style="position:relative;">
+            <mat-icon mat-list-icon class="menu-button" (click)="routeToUrl('/cart')">shopping_cart</mat-icon>
+            <!-- <div  class="cart-notification">50</div> -->
+            <div  [@notificationCountState]="stateVal">{{_itemCount}}</div>
+            
+        </div>
+        
+       <!-- <app-header-menu-dropdown *ngFor= "let menu of rootMenuList" [headerMenuList]="headerMenuList | async" [headerMenu]="menu" (menuClicked)='routeToUrl($event)'></app-header-menu-dropdown> -->
+        <!--<button mat-button [matMenuTriggerFor]="registrationMenu">{{'MENU_REGISTRATION' | translate}}</button>
+        <mat-menu #registrationMenu="matMenu" overlapTrigger=false>
+            <button mat-menu-item (click)="routeToUrl('/registration/member')">{{'MENU_MEMBER_REGISTRATION' | translate}}</button>
+            <button mat-menu-item>{{'MENU_BOOK_REGISTRATION' | translate}}</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="transactionMenu">{{'MENU_TRANSACTION' | translate}}</button>
+        <mat-menu #transactionMenu="matMenu" overlapTrigger=false>
+            <button mat-menu-item>{{'MENU_BOOK_ISSUANCE' | translate}}</button>
+            <button mat-menu-item>{{'MENU_BOOK_RENEWAL' | translate}}</button>
+            <button mat-menu-item>{{'MENU_BOOK_SUBMISSION' | translate}}</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="requestMenu">{{'MENU_REQUEST' | translate}}</button>
+        <mat-menu #requestMenu="matMenu" overlapTrigger=false>
+            <button mat-menu-item>{{'MENU_BOOK_REQUEST' | translate}}</button>
+            <button mat-menu-item>{{'MENU_RENEWAL_REQUEST' | translate}}</button>
+        </mat-menu>
+        <button mat-button (click)="routeToUrl('/dashboard')">{{'MENU_DASHBOARD' | translate}}</button>-->
+    </div>
+</div>

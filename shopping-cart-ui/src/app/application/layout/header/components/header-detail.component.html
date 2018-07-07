@@ -1,0 +1,9 @@
+<div *ngIf="showHeader" class="common-header">
+<div fxFlex>
+    <div fxLayout= "row">
+        <img fxFlex="80px" src='./assets/images/Esc_logo1.png' style="height:65px;margin-left:10px;">
+        <span fxFlex class="common-header-text">{{'HEADER_EPAM_SHOPPERS_CART' | translate}}</span>
+    </div>
+        <app-header-menu [itemCount]="itemsCount$ | async" ></app-header-menu>
+    </div>
+</div>

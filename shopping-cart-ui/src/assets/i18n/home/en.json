@@ -1,0 +1,20 @@
+{
+    "HOME_ABOUT_US": "About Us",
+    "HOME_UPDATES": "Updates",
+    "HOME_VIEW_ALL": "View All",
+    "HOME_PRODUCTS": "Products",
+    "HEADER_EPAM_SHOPPERS_CART": "Epam Shopper`s Cart",
+    "HOME_AVAILABLE_NEW_PRODUCTS": "Available new Products",
+    "HOME_OUR_MISSION": "Our Mission",
+    "HOME_NOT_A_MEMBER":"Not a member?",
+    "HOME_NOW":"Now!!",
+    "LOGIN_HEADER":"Login",
+    "HOME_SIGN_UP":"Sign Up",
+    "LOGIN_LOGIN_BUTTON":"Login",
+    "LOGIN_CANCEL_BUTTON":"Cancel",
+    "LOGIN_USER_ID":"Username",
+    "LOGIN_PASSWORD":"Password",
+    "HOME_CONTACTS":"Contacts",
+    "SERVER_ERROR": "Unexpected Server Error.",
+    "INVALID_USER_ERROR": "Invalid Username or Password."
+}

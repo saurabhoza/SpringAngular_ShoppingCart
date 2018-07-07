@@ -1,0 +1,41 @@
+.member-profile-details-container{
+    margin:18px;
+    background-color: rgba(0,0,0,.70);
+    padding:5px;
+}
+.body-div{
+    padding: 0 10px 0 0;
+}
+.member-profile-details-header{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    padding:10px 0 5px 20px;
+    display: block;
+    text-align: left;
+}
+.member-profile-contact-list mat-list-item{
+    text-align: left;
+    color: #fff !important;
+    height:35px;
+}
+.member-profile-profile-pic {
+    margin-top:3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.profile-greeting{
+    color:white;
+    line-height:36px;
+}
+.profile-greeting span{
+ padding-left:5px;
+}
+
+.profile-greeting div{        
+    padding-left:10px;
+}
+

@@ -1,0 +1,10 @@
+<!--<button mat-button [matMenuTriggerFor]="menu" *ngIf="headerMenu.children.length > 0">{{headerMenu.name | translate}}</button>-->
+<span class="menu" *ngIf="headerMenu.children.length > 0">
+<button mat-button [matMenuTriggerFor]="menu">{{headerMenu.name | translate}}</button>
+        <mat-menu #menu="matMenu" overlapTrigger=false >
+            <button mat-menu-item *ngFor= "let childId of headerMenu.children" (click)="goToUrl(headerMenuList[childId].url)">{{headerMenuList[childId].name | translate}}</button>
+        </mat-menu> 
+    </span>
+<span class="menu" *ngIf="headerMenu.children.length === 0">
+<button mat-button (click)="goToUrl(headerMenu.url)">{{headerMenu.name | translate}}</button>
+</span>

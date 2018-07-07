@@ -1,0 +1,15 @@
+<div class="cart-item" *ngFor='let product of cartProductList'>
+  <div class="cart-item-inner">
+     <a class="link"><img [src]='product.product.thumbnailURL' style="width: 120px" (click)='viewProductDetail(product.product.id)'></a>
+     <div class="cart-item-desc">
+        <div><a class="cart-item-name link" (click)='viewProductDetail(product.product.id)'>{{product.product.name}}</a></div>
+        <div class="cart-item-spec">{{product.product.description}} </div>
+        <div class="cart-item-sale"><span >Seller: {{product.product.seller}}</span></div>
+        <div class="cart-item-sale"><span >Per Unit Price: {{product.product.mrp | number : '1.2-2'}}</span></div>
+        <div class="cart-item-price1 cart-item-price2">₹{{ (product.product.mrp * product.quantity) | number : '1.2-2' }} </div>
+        
+     </div>  
+     <div class="cart-item-remove1 cart-item-remove2 link" (click)='removeProductFromCart(product)'><span>REMOVE</span></div>                 
+  </div>
+ <quantity-validation [cartProduct]='product' (invalidQuantity)='showErrorMessage($event)'></quantity-validation>
+</div>

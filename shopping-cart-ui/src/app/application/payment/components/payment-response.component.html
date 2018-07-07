@@ -1,0 +1,19 @@
+<mat-card fxFlex class="middle-container">
+    <mat-card-header class="text-left">
+        <mat-card-title></mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="status-container">
+        <div *ngIf="payment.status==='Success'">
+            <mat-icon class="success-check">check_circle</mat-icon>
+            <h1>{{'PAYMENT_SUCCESS' | translate}}</h1>
+            <h2>{{'ORDER_MESSAGE_PART_1' | translate}}
+                <a href="javascript: alert('This functionality is disabled')">{{payment.orderId}}</a> {{'ORDER_MESSAGE_PART_2' | translate}}</h2>
+            <br/>
+            <button mat-raised-button (click)="viewOrders()">{{'VIEW_ORDERS' | translate}}</button>
+            <br/>
+            <br/>
+            <b>{{'NOTE' | translate}}:</b>
+            <span>{{'PAYMENT_MESSAGE' | translate}} </span>
+        </div>
+    </mat-card-content>
+</mat-card>

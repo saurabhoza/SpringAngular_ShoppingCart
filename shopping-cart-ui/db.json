@@ -1,0 +1,337 @@
+{
+  "logins": [
+    {
+      "userId": "adsd",
+      "password": "dsad",
+      "id": 1
+    },
+    {
+      "userId": "jggjh",
+      "password": "jgj",
+      "id": 2
+    },
+    {
+      "userId": "asdsad",
+      "password": "asdsa",
+      "id": 3
+    },
+    {
+      "userId": "asdsa",
+      "password": "asdds",
+      "id": 4
+    },
+    {
+      "userId": "sdsd",
+      "password": "asdfsad",
+      "id": 5
+    },
+    {
+      "userId": "sdfd",
+      "password": "sdfdsf",
+      "id": 6
+    },
+    {
+      "userId": "dgdf",
+      "password": "gdfg",
+      "id": 7
+    },
+    {
+      "userId": "asdsad",
+      "password": "asdasd",
+      "id": 8
+    },
+    {
+      "userId": "asddsad",
+      "password": "asda",
+      "id": 9
+    },
+    {
+      "userId": "czxcx",
+      "password": "zxcxzc",
+      "id": 10
+    },
+    {
+      "userId": "ada",
+      "password": "asd",
+      "id": 11
+    },
+    {
+      "userId": "asd",
+      "password": "asdsa",
+      "id": 12
+    },
+    {
+      "userId": "adsa",
+      "password": "asds",
+      "id": 13
+    },
+    {
+      "userId": "asdasd",
+      "password": "adsdsa",
+      "id": 14
+    },
+    {
+      "userId": "adsad",
+      "password": "asdsad",
+      "id": 15
+    },
+    {
+      "userId": "sdsd",
+      "password": "adasd",
+      "id": 16
+    },
+    {
+      "userId": "ssaf",
+      "password": "sfsd",
+      "id": 17
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Surendra",
+      "lastName": "Gupta",
+      "dob": "06/08/1987",
+      "gender": "M",
+      "emailId": "surendra_gupta@epam.com",
+      "role": "M",
+      "status": "A",
+      "contactNumber": "9854864734",
+      "address": "Street-1, Pune"
+    },
+    {
+      "id": 2,
+      "firstName": "Aakash",
+      "lastName": "Sen",
+      "dob": "02/10/1991",
+      "gender": "M",
+      "emailId": "aakash_sen@epam.com",
+      "role": "M",
+      "status": "A",
+      "contactNumber": "9854864734",
+      "address": "Street-2, Pune"
+    },
+    {
+      "id": 3,
+      "firstName": "Mandar",
+      "lastName": "Navare",
+      "dob": "15/05/1978",
+      "gender": "M",
+      "emailId": "mandar_navare@epam.com",
+      "role": "M",
+      "status": "A",
+      "contactNumber": "9764686584",
+      "address": "Street-3, Pune"
+    }
+  ],
+  "members": [
+    {
+      "firstName": "Surendra",
+      "lastName": "Gupta",
+      "gender": "M",
+      "address": "Some Address, Some street.",
+      "emailId": "surendra_gupta@gmail.com",
+      "contactNumber": "2423434645",
+      "id": 1
+    },
+    {
+      "firstName": "zxvcx",
+      "lastName": "xcvxcv",
+      "gender": "M",
+      "address": "vcxvcxv",
+      "emailId": "xcvcxv",
+      "contactNumber": "xcvcx",
+      "id": 2
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": "fasfs",
+      "contactNumber": null,
+      "id": 3
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": null,
+      "contactNumber": null,
+      "id": 4
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": null,
+      "contactNumber": null,
+      "id": 5
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": null,
+      "contactNumber": null,
+      "id": 6
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": null,
+      "contactNumber": null,
+      "id": 7
+    },
+    {
+      "firstName": null,
+      "lastName": null,
+      "gender": null,
+      "address": null,
+      "emailId": null,
+      "contactNumber": null,
+      "id": 8
+    },
+    {
+      "firstName": "sdsfsd",
+      "lastName": "sdfsdf",
+      "gender": "M",
+      "address": "dasdasdasd",
+      "emailId": "sfdsd@fdf.com",
+      "contactNumber": "4234324444",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "quantity": 1,
+      "product": {
+        "id": 1,
+        "name": "Product1",
+        "price": 100,
+        "quantityAvailable": 20,
+        "url": "./../../../../../assets/images/Product1.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "quantity": 1,
+      "product": {
+        "id": 3,
+        "name": "Product3",
+        "price": 300,
+        "quantityAvailable": 5,
+        "url": "./../../../../../assets/images/Product3.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "quantity": 1,
+      "product": {
+        "id": 2,
+        "name": "Product2",
+        "price": 200,
+        "quantityAvailable": 4,
+        "url": "./../../../../../assets/images/Product2.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "quantity": 1,
+      "product": {
+        "id": 4,
+        "name": "Product4",
+        "price": 400,
+        "quantityAvailable": 10,
+        "url": "./../../../../../assets/images/Product4.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "quantity": 1,
+      "product": {
+        "id": 5,
+        "name": "Product5",
+        "price": 100,
+        "quantityAvailable": 20,
+        "url": "./../../../../../assets/images/Product5.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "quantity": 1,
+      "product": {
+        "id": 6,
+        "name": "Product6",
+        "price": 200,
+        "quantityAvailable": 4,
+        "url": "./../../../../../assets/images/Product6.jpg"
+      }
+    },
+    {
+      "id": 12,
+      "quantity": 1,
+      "product": {
+        "id": 12,
+        "name": "Product12",
+        "price": 400,
+        "quantityAvailable": 10,
+        "url": "./../../../../../assets/images/Product12.jpg"
+      }
+    }
+  ],
+  "Address": [
+    [
+      {
+        "fullName": "Saurabh Ozaq",
+        "mobileNumber": "6464",
+        "pinCode": "646464",
+        "addressLine1": "jhkjh",
+        "addressLine2": "jkhk",
+        "landMark": "gjh",
+        "townCity": "g",
+        "state": "z"
+      },
+      {
+        "fullName": "Saurabh Ozaq",
+        "mobileNumber": "6464",
+        "pinCode": "646464",
+        "addressLine1": "jhkjh",
+        "addressLine2": "jkhk",
+        "landMark": "gjh",
+        "townCity": "g",
+        "state": "z"
+      }
+    ],
+    [
+      {
+        "fullName": "eeeee",
+        "mobileNumber": "6464",
+        "pinCode": "464646",
+        "addressLine1": "hhgjh",
+        "addressLine2": "jgjgjg",
+        "landMark": "jgj",
+        "townCity": "gjhg",
+        "state": "aaaaa",
+        "isShippingAddress": false
+      },
+      {
+        "fullName": "Saurabh Ozal",
+        "mobileNumber": "6464",
+        "pinCode": "464646",
+        "addressLine1": "hhgjh",
+        "addressLine2": "jgjgjg",
+        "landMark": "jgj",
+        "townCity": "gjhg",
+        "state": "qqqqq",
+        "isShippingAddress": true
+      }
+    ]
+  ]
+}
